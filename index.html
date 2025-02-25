@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pertumbuhan Jumlah Penduduk di Indonesia(2013-2023)</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">Populasi</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    
+                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Populasi<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/piramida penduduk.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Jelajahi Dinamika Pertumbuhan Penduduk Indonesia</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Dengan populasi yang terus bertambah, diperlukan kebijakan yang seimbang untuk menjaga kesejahteraan rakyat.</p>
+                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Analisis Data</a>
+                                    <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Telusuri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/motor.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Jelajahi Dinamika Pertumbuhan Penduduk Indonesia</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Dengan populasi yang terus bertambah, diperlukan kebijakan yang seimbang untuk menjaga kesejahteraan rakyat.</p>
+                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Analisis Data</a>
+                                    <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Telusuri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0" placeholder="Keyword" />
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>Negara</option>
+                                    <option value="1">Indonesia</option>
+                                    <option value="2">China</option>
+                                    <option value="3">India</option>
+									<option value="4">Amerika Serikat</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>Tahun</option>
+                                    <option value="1">2013</option>
+                                    <option value="2">2014</option>
+                                    <option value="3">2015</option>
+									<option value="4">2016</option>
+                                    <option value="5">2017</option>
+                                    <option value="6">2018</option>
+									<option value="7">2019</option>
+                                    <option value="8">2020</option>
+                                    <option value="9">2021</option>
+									<option value="10">2022</option>
+                                    <option value="11">2023</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+         <!-- Judul Start -->
+		 <div class="container-xxyl py-1">
+		     <div class="container">
+		           <h2 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Pertumbuhan Jumlah Penduduk di Indonesia(2013-2023)</h2>
+		           <div class=" row g-4">
+				       
+					   
+<div class="container-xxl py-1">
+    <div class="container">
+				<h4>Pendahuluan</h4>
+		<div class="container-xxl py-1">
+			<div class="container">
+           
+  
+	        <p style="text-align:justify;text-indent:0.5in">Penduduk merupakan salah satu aspek fundamental dalam pembangunan suatu negara. Dengan jumlah penduduk yang besar, sebuah negara memiliki potensi sumber daya manusia yang dapat dimanfaatkan untuk mendukung pertumbuhan ekonomi, pembangunan infrastruktur, dan peningkatan kesejahteraan sosial. <b>Indonesia</b>, sebagai negara dengan jumlah penduduk terbesar keempat di dunia setelah <b>China, India, dan Amerika Serikat</b>, terus mengalami peningkatan jumlah penduduk setiap tahunnya. </p->
+            <p style="text-align:justify;text-indent:0.5in">Pemantauan jumlah penduduk sangat penting dalam berbagai aspek kehidupan, mulai dari penyusunan kebijakan pemerintah, distribusi sumber daya, hingga perencanaan pembangunan berkelanjutan. Dengan pertumbuhan penduduk yang terus meningkat,<b>Indonesia</b> menghadapi berbagai tantangan, seperti ketersediaan lapangan pekerjaan, layanan kesehatan, pendidikan, serta kebutuhan akan infrastruktur yang memadai. Oleh karena itu, data jumlah penduduk yang diperbarui setiap tahun sangat diperlukan untuk mengukur perkembangan populasi dan mempersiapkan kebijakan yang tepat.</p>
+            <p style="text-align:justify;text-indent:0.5in">Artikel ini akan membahas <b>jumlah penduduk Indonesia dari tahun 2013 hingga 2023 berdasarkan data yang tersedia</b>.</p>
+            
+			</div>
+		</div>
+	</div>
+ </div>
+			
+    
+ 	<div class="container-xxl py-1">
+        <div class="container">
+				<h4>Isi</h4>
+		    <div class="container-xxl py-1"> 
+				<div class="container">
+					<p style="text-align:justify;text-indent:0.5in" >Berdasarkan data yang dikumpulkan dari <b>Badan Pusat Statistik (BPS)</b>, jumlah penduduk Indonesia terus mengalami pertumbuhan dari tahun 2013 hingga 2023. Pada tahun 2023, jumlah penduduk  diperkirakan mencapai <span style="background-color:yellow"><b>278,8 juta jiwa</b></span>, meningkat sekitar <b>1,1%</b> dibandingkan tahun 2022. Tren ini menunjukkan bahwa Indonesia masih berada dalam fase pertumbuhan penduduk yang cukup tinggi. Jika dilihat dari data tahun-tahun sebelumnya, pada tahun 2013 jumlah penduduk Indonesia tercatat sekitar <span style="background-color:yellow"><b>248,8 juta jiwa</b></span>. Artinya, dalam kurun waktu 10 tahun, jumlah penduduk meningkat sekitar <span style="background-color:yellow"><b>30 juta jiwa</b></span>. Angka ini menunjukkan rata-rata pertumbuhan tahunan yang cukup konsisten.
+ </p>
+		<p style="text-align:justify;text-indent:0.5in" >Selain itu, proyeksi jumlah kelahiran di Indonesia hingga tahun 2023 mengalami penurunan dibandingkan satu dekade sebelumnya. Pada tahun 2013, jumlah kelahiran tercatat <span style="background-color:yellow"><b>4,95 juta kelahiran</b></span>, sedangkan pada tahun 2023, jumlah ini diperkirakan mengalami penurunan sekitar <b>6,6%</b> Fenomena ini dapat disebabkan oleh berbagai faktor, seperti peningkatan kesadaran masyarakat terhadap program keluarga berencana, pergeseran pola pikir tentang jumlah anak dalam keluarga, serta meningkatnya angka partisipasi perempuan dalam dunia kerja yang memengaruhi keputusan untuk memiliki anak.</p>
+        <p style="text-align:justify;text-indent:0.5in">Dari segi demografi, rasio jenis kelamin penduduk Indonesia pada tahun 2023 diperkirakan mencapai 104, yang berarti terdapat 104 laki-laki untuk setiap 100 perempuan. Jumlah penduduk laki-laki diperkirakan sekitar <span style="background-color:yellow"><b>140,8 juta jiwa</b></span>, sementara jumlah penduduk perempuan mencapai <span style="background-color:yellow"><b>137,9 juta jiwa</b> </span>. Perbedaan jumlah ini tidak terlalu signifikan dan cenderung stabil dalam beberapa tahun terakhir.</p>
+        <p style="text-align:justify;text-indent:0.5in"> Selain itu, kepadatan penduduk Indonesia juga terus meningkat. Pada tahun 2023, kepadatan penduduk diproyeksikan mencapai <span style="background-color:yellow"><b>147 jiwa per kilometer persegi</b></span>. Angka ini lebih tinggi dibandingkan tahun-tahun sebelumnya, yang menunjukkan semakin padatnya populasi, terutama di wilayah perkotaan. Urbanisasi yang terus meningkat menyebabkan migrasi besar-besaran ke kota-kota besar, seperti <b>Jakarta, Surabaya, dan Bandung</b>, yang berdampak pada permasalahan sosial seperti kemacetan, kebutuhan perumahan, serta tekanan terhadap fasilitas umum.</p>
+      
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+    <div class="container-xxl py-1">
+        <div class="container">
+				<h4>Kesimpulan</h4>
+			<div class="container-xxl py-1">
+				<div class="container">
+
+			<p style="text-align:justify;text-indent:0.5in" >Berdasarkan data yang diperoleh, dapat disimpulkan bahwa jumlah penduduk Indonesia mengalami peningkatan yang cukup signifikan dalam satu dekade terakhir. Meskipun jumlah kelahiran mengalami sedikit penurunan, angka pertumbuhan penduduk tetap tinggi, yang berdampak pada meningkatnya kepadatan penduduk. Perbedaan jumlah penduduk laki-laki dan perempuan masih dalam batas wajar, sementara urbanisasi terus meningkat, menyebabkan tantangan dalam hal penyediaan infrastruktur dan layanan publik.</p>
+            <p style="text-align:justify;text-indent:0.5in" >Pemantauan pertumbuhan penduduk sangat penting untuk memastikan bahwa kebijakan pembangunan yang diambil oleh pemerintah dapat mengakomodasi perubahan demografi yang terjadi. Dengan perencanaan yang tepat, pertumbuhan penduduk dapat menjadi peluang untuk meningkatkan kesejahteraan masyarakat dan mendukung pembangunan nasional secara berkelanjutan.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-xxl py-1">
+        <div class="container">
+				<h4>Penutup</h4>
+			<div class="container-xxl py-1">
+				<div class="container">
+
+			<p style="text-align:justify;text-indent:0.5in" >Pertumbuhan penduduk merupakan fenomena yang tidak dapat dihindari dan harus dikelola dengan baik. Dengan jumlah penduduk yang terus meningkat, Indonesia perlu menerapkan kebijakan yang tepat guna memastikan bahwa pertumbuhan ini tidak menimbulkan permasalahan sosial dan ekonomi yang serius. Pemerintah dan masyarakat harus bekerja sama dalam menciptakan solusi yang efektif, baik dalam hal penyediaan lapangan pekerjaan, pendidikan, kesehatan, maupun infrastruktur yang memadai.</p>
+			<p style="text-align:justify;text-indent:0.5in" >Melalui data dan analisis yang akurat, kita dapat lebih memahami dinamika pertumbuhan penduduk di Indonesia dan bagaimana dampaknya terhadap berbagai aspek kehidupan.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	  <!-- About Start -->
+	  
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+				
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+						<center>
+							<img src="img/diagram.jpeg"  alt="" style="max-width:130%">
+                        </center>    
+                                
+								
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+
+        <!-- Sumber Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Sumber</h1>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/dataindo.png" alt="" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+										   <a href="https://dataindonesia.id/varia/detail/data-jumlah-penduduk-indonesia-20132023" target="_blank">
+                                            <h5 class="mb-3">DataIndonesia.ID</h5>
+											</a>
+                                        </div> 
+									</div>
+								</div>
+							</div>
+						</div>		
+					</div>			
+								
+										  
+                                    
+                      <footer>
+    <div class="footer-container">
+        <p class="creator">Dibuat oleh <span>Keysha Putri Prabandini</span></p>
+        <p class="email">
+            📩 <a href="mailto:emailkamu@flwnlee@gmail.com">flwnlee@gmail.com</a>
+        </p>
+    </div>
+</footer>
+
+
+
+ 
+        <!-- Jobs End -->
+
+
+        
+        <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+	
+	
+
+</body>
+
+</html>
+        
+
+        
+
